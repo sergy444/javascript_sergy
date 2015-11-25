@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Redirección con confirmación</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+        function link(){
+            var random = Math.floor(Math.random() * 3);
+            
+            if(random == 0){
+                document.location.href="https://mail.google.com/";
+            } else if(random == 1){
+                document.location.href="https://www.yahoo.com/";
+            }else if(random == 2){
+                document.location.href="https://www.hotmail.es/";
+            }
+        }
+        </script>
+        <a href="#" id="link" onclick="link()">Enlace random</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mostar Ocultar</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+         $(document).ready(function(){      
+            $("#boton2").click(function(){
+                $("#saber").hide();
+            });
+    
+            $("#boton1").click(function(){
+                $("#saber").show();
+            });
+        });
+        </script>
+        
+        <img width="500" height="400" id="saber" name="saber" src="../img/saber.jpg"></br>
+        <input type="button" name="" id="boton1" value="Mostrar"/>
+        <input type="button" name="" id="boton2" value="Ocultar"/>
+    </body>
+</html>

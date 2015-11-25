@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imágenes que cambian</title>
+        <meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    	<style>
+    	    #foto{
+    	        margin-left:500px;
+    	        margin-top:-550px;
+    	        position:absolute;
+    	    }
+    	    #button1{
+    	         margin-left:700px;
+    	         margin-top:-630px;
+    	         position:absolute;
+    	    }
+    	    #button2{
+    	         margin-left:780px;
+    	         margin-top:-630px;
+    	         position:absolute;
+    	    }
+    	    
+    	</style>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+        var contador = 0;
+        
+            function cambiaFoto(){
+                if(contador == 0){
+                document.getElementById("foto").src = "img/saber.jpg";
+                contador++;
+                }
+                else if(contador == 1){
+                document.getElementById("foto").src = "img/titan.jpg";
+                contador++;
+                }
+            }
+            function cambiaFoto2(){
+                if(contador == 1){
+                document.getElementById("foto").src = "img/eren.jpg";
+                contador--;
+                }
+                else if(contador == 2){
+                document.getElementById("foto").src = "img/saber.jpg";
+                contador--;
+                }
+                
+            }
+            
+            
+            
+
+        </script>
+        
+        <img width="300" height="200" id="eren" name="eren" src="img/eren.jpg"></br></br>
+        <img width="300" height="200" id="saber" name="saber" src="img/saber.jpg"></br></br>
+        <img width="300" height="200" id="titan" name="titan" src="img/titan.jpg"></br>
+        <input type="button" id="button1" value="Adelante" onclick="cambiaFoto()"/>
+        <input type="button" id="button2" value="Atras" onclick="cambiaFoto2()"/>
+        <div><img width="650" height="470" id="foto" name="foto" src="img/eren.jpg"></div>
+        
+    </body>
+</html>

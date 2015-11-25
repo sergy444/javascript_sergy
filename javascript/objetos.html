@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objetos</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+           var titulo = prompt("Título del CD");
+            var grupo = prompt("Nombre del gruop");
+            var fecha = prompt("Fecha de salida de CD");
+            
+            function CD (titulo, grupo, fecha){
+            	this.titulo=titulo;
+            	this.grupo=grupo;
+            	this.fecha=fecha;
+            	this.mostrar=mostrarpantalla; 
+            }
+        
+            newcd = new CD("Ten", "Fade", "2010");
+           
+        
+            function mostrarpantalla (titulo, grupo, fecha){
+            	document.write ("<BR>Título: "+this.titulo);
+            	document.write ("<BR>Grupo: "+this.grupo);
+            	document.write ("<BR>Fecha: "+this.fecha);
+        	
+            }
+        newcd.mostrar();
+        </script>
+    </body>
+</html>

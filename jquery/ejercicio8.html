@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cambiar tamaño</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+            .clase1{
+                font-family:monospace;
+                font-size:12pt;
+            }
+            .clase2{
+                font-family:monospace;
+                font-size:14pt;
+            }
+            .clase3{
+                font-family:monospace;
+                font-size:16pt;
+            }
+        </style>
+        <script type="text/javascript">
+         $(document).ready(function(){ 
+             
+             $("#boton1").click(function(){
+                 $("p").removeClass();
+                 $("p").addClass("clase1");
+            });
+            $("#boton2").click(function(){
+                 $("p").removeClass();
+                 
+                 $("p").addClass("clase2");
+            });
+            $("#boton3").click(function(){
+                 
+                 $("p").removeClass();
+                 $("p").addClass("clase3");
+            });
+         });
+        </script>
+        <p class="clase1">Este texto cambiará de tamaño al hacer click sobre los botones</p>
+        <input type="button" name="" id="boton1" value="tamaño1"/>
+        <input type="button" name="" id="boton2" value="tamaño2"/>
+        <input type="button" name="" id="boton3" value="tamaño3"/>
+    </body>
+</html>

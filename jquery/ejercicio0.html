@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery radio button</title>
+    	<meta charset="utf-8"/>
+    	<script src="../lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+            $(document).ready(function(){       
+               
+                $('#boton').click(function() {
+                    if($("input [id='button4']:checked").val()){
+                   alert('Respuesta correcta');
+                    }
+                )};
+                
+            });
+
+        </script>
+        <p>¿Cuánto es 2+2?</p>
+        
+        <input type="radio" name="button" id="button1" value="incorrecto"/>1<br/>
+        <input type="radio" name="button" id="button2" value="incorrecto"/>2<br/>
+        <input type="radio" name="button" id="button3" value="incorrecto"/>3<br/>
+        <input type="radio" name="button" id="button4" value="correcto"/>4<br/>
+        <input type="radio" name="button" id="button5" value="incorrecto"/>5<br/>
+        <input type="button" name="" id="boton" value="comprobar"/>
+    </body> 
+</html>

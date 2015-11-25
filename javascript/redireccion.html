@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Redirección con confirmación</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function link(){
+                if(confirm("¿Quieres ir a google?")){
+                    document.location.href="https://www.google.es/";
+                }
+            }
+        </script>
+        <a href="#" id="link" onclick="link()">Enlace a google</a>
+        </body> 
+        </html>

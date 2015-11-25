@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fade In</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+         $(document).ready(function(){  
+              
+            $("#boton").click(function(){
+                $("#mensaje1").fadeIn();
+                $("#mensaje2").fadeIn("slow");
+                $("#mensaje3").fadeIn(3000);
+            });
+         });
+        </script>
+        <div id="mensaje1" hidden>Texto1</div></br>
+        <div id="mensaje2" hidden>Texto2</div></br>
+        <div id="mensaje3" hidden>Texto3</div></br>
+        <input type="button" name="" id="boton" value="Mostrar"/>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plantilla</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    	<script src="lib/MooTools-Core-1.5.2.js"></script>
+    	<script src="lib/jquery.validate.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+         $(document).ready(function(){   
+         	
+             $("#boton").click(function(){
+             	
+                 $("#formulario").validate
+	         ({
+	             rules:  
+	             {
+	               email: {
+	                   required: true, 
+	                   email: true, 
+	                   minlength: 5, 
+	                   maxlength: 80
+	                   
+	               },
+	               
+	               nombre: {
+	                   required: true, 
+	                   nombre: true, 
+	                   minlength: 2, 
+	                   maxlength: 50
+	                   
+	               },
+	               apellido: {
+	                   required: true, 
+	                   apellido: true, 
+	                   minlength: 2, 
+	                   maxlength: 50
+	                   
+	               },
+	               fecha: {
+	                   dateITA: true
+	                   
+	               },
+	               
+	               nif: {
+	                   required: true, 
+	                   nif: true, 
+	                   minlength: 1, 
+	                   maxlength: 9
+	                   
+	               
+	             },
+	             posta: {
+	                   required: true, 
+	                   digits: true, 
+	                   minlength: 1, 
+	                   maxlength: 5
+	                   
+	               },
+	             },
+         
+	             messages: 
+            {
+	           email: {
+		           required: 'El email es requerido', 
+		           email: 'El formato de email es incorrecto', 
+		           minlength: 'El mínimo permitido son 5 caracteres',
+		           maxlength: 'El máximo permitido son 80 caracteres'
+	               
+	           },
+	           
+                nombre: {
+                    required: 'El nombre es requerido', 
+                    nombre: 'Sólo letras', 
+                    minlength: 'El mínimo permitido son 2 caracteres', 
+                    maxlength: 'El máximo permitido son 50 caracteres'
+                    
+                },
+                apellido: {
+                    required: 'El apellido es requerido', 
+                    apellido: 'Sólo letras', 
+                    minlength: 'El mínimo permitido son 2 caracteres', 
+                    maxlength: 'El máximo permitido son 50 caracteres'
+                    
+                },
+               
+               nif: {
+                    required: 'El nif es requerido', 
+                    minlength: 'El mínimo permitido son 1 caracteres', 
+                    maxlength: 'El máximo permitido son 9 caracteres'
+                    
+                },
+                    
+	           posta: {
+	               required: 'El código postal es requerido', 
+	               digits: 'Sólo dígitos', 
+	               minlength: 'El mínimo permitido son 1 caracteres', 
+	               maxlength: 'El máximo permitido son 5 caracteres'
+	               
+	           },
+	           fecha: {
+	               required: 'La fecha es requerida', 
+	           },
+            }
+	         });
+             )};
+	   });
+	 
+
+     
+        </script>
+        
+        <form method="post" id="formulario">
+              <table>
+               
+               <tr>
+                  <td>Nombre (*):</td><td><input type="text" name="nombre" id="nombre"></td>
+               </tr>
+               <tr>
+                  <td>Apellidos (*):</td><td><input type="text" name="apellido" id="apellido"></td>
+               </tr>
+               <tr>
+                  <td>Fecha de nacimiento (dd/mm/yyyy):</td><td><input type="date" name="fecha" id="fecha"></td>
+               </tr>  
+               <tr>
+                  <td>N.I.F.:</td><td><input type="text" name="nif" id="nif"></td>
+               </tr>
+               <tr>
+                  <td>Código Postal:</td><td><input type="text" name="posta" id="posta"></td>
+               </tr>
+               <tr>
+                  <td>Email:</td><td><input type="text" name="email" id="email"></td>
+               </tr>
+               <tr>
+                  <td>Blog personal:</td><td><input type="text" name="blog" id="blog"></td>
+               </tr>
+               </table>
+             <button type="submit" id="boton">Validar</button>
+        </form>
+
+    </body>
+</html>

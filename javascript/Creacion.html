@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creación de nodos</title>
+        <meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            var p = document.createElement("p");
+            
+            var texto = document.createTextNode("Párrafo nuevo creado. Because yes.");
+            
+            p.appendChild(texto);
+            document.body.appendChild(p);
+        </script>
+        
+    </body>
+</html>

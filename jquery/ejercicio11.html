@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zubiri</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var cont = 0;
+        var cont2 = 0;
+        var cont3 = 0;
+        var cont4 = 0;
+        var cont5 = 0;
+        var cont6 = 0;
+        
+          function cambia() {
+            if(cont ==0){
+                document.getElementById('z').src = "Letras/Blanco.gif";
+                cont++;
+            }else if(cont == 1){
+                document.getElementById('z').src = "Letras/Z.gif";
+                cont--;
+            }
+          }
+            function cambia2() {
+            if(cont2 ==0){
+                document.getElementById('u').src = "Letras/Blanco.gif";
+                cont2++;
+            }else if(cont2 == 1){
+                document.getElementById('u').src = "Letras/U.gif";
+                cont2--;
+            }
+          }
+           function cambia3() {
+            if(cont3 ==0){
+                document.getElementById('b').src = "Letras/Blanco.gif";
+                cont3++;
+            }else if(cont3 == 1){
+                document.getElementById('b').src = "Letras/B.gif";
+                cont3--;
+            }
+          }
+           function cambia4() {
+            if(cont4 ==0){
+                document.getElementById('i').src = "Letras/Blanco.gif";
+                cont4++;
+            }else if(cont4 == 1){
+                document.getElementById('i').src = "Letras/I.gif";
+                cont4--;
+            }
+          }
+           function cambia5() {
+            if(cont5 ==0){
+                document.getElementById('r').src = "Letras/Blanco.gif";
+                cont5++;
+            }else if(cont5 == 1){
+                document.getElementById('r').src = "Letras/R.gif";
+                cont5--;
+            }
+          }
+ 
+            function cambia6() {
+            if(cont6 ==0){
+                document.getElementById('i2').src = "Letras/Blanco.gif";
+                cont6++;
+            }else if(cont6 == 1){
+                document.getElementById('i2').src = "Letras/I.gif";
+                cont6--;
+            }
+          }
+         
+        </script>
+        <img src="Letras/Z.gif" id="z" onclick="cambia()"></img>
+        <img src="Letras/U.gif" id="u" onclick="cambia2()"></img>
+        <img src="Letras/B.gif" id="b" onclick="cambia3()"></img>
+        <img src="Letras/I.gif" id="i" onclick="cambia4()"></img>
+        <img src="Letras/R.gif" id="r" onclick="cambia5()"></img>
+        <img src="Letras/I.gif" id="i2" onclick="cambia6()"></img>
+        
+    </body>
+</html>

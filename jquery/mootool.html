@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    	<script src="lib/MooTools-Core-1.5.2.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+            #c1 { width: 30px; height: 30px; background-color: red; margin: 5px; }
+        </style>
+        <script type="text/javascript">
+         $(document).ready(function(){      
+             
+            miEfecto= new Fx.Morph("c1",{
+               duration: 3000,
+               transition: "back:in:out"
+               });
+               
+            $$("#boton1").addEvent("click",function(){
+               miEfecto.start({
+                  "width":"150px",
+                  "height":"150px",
+                  "backgroundColor":"#FA58F4"
+                  });
+               restaurar.delay(6000)
+            });
+               
+            function restaurar(){
+               $("c1").setStyles({
+                  "width":"30px",
+                  "height":"30px",
+                  "backgroundColor":"#00f" 
+                  });
+               }	
+
+         });
+        </script>
+        <div id="c1"></div>
+        <button id="boton1">Efecto</button>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+        
+        function funcion1(){
+        var evento = event.type;
+           if(evento == "dblclick"){
+            document.getElementById("1").style.color = "red";
+       
+         } 
+        else if(evento == "click"){
+            document.getElementById("1").style.color = "pink";
+       
+        } 
+            
+        }
+       
+     </script>
+        <p id="1" onclick="funcion1()" ondblclick="funcion1()">Este párrafo cambiará de color si pulsas sobre el.</p>
+        
+        
+     </body>
+     </html>

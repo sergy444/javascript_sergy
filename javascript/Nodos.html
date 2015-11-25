@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        
+        <p name="parrafo1">Cosas que empiezan por p <a name="link1"href="http://Pepito.html">Link 1</a><a name="link1"href="http://Pepito.html">Link 1</a><a name="link1"href="http://Pepito.html">Link 1</a></p>
+        <p name="parrafo2">Cosas que empiezan por s <a name="link2"href="http://Sergy.html">Link 2</a><a name="link1"href="http://Pepito.html">Link 1</a></p>
+        <p name="parrafo3">Cosas que empiezan por l <a name="link2"href="http://Link.html">Link 3</a><a name="link1"href="http://Pepito.html">Link 1</a><a name="link1"href="http://Pepito.html">Link 1</a><a name="link1"href="http://Pepito.html">Link 1</a></p>
+        <script type="text/javascript">
+        
+        var parrafos = document.getElementsByTagName("p");
+        var cont = 0;
+        function contParrafos(){
+            
+            for(var i=0; i<parrafos.length; i++) {
+              
+            }
+            alert(i + " párrafos");
+        }
+        function enlace1(){
+            for(var i=0; i<parrafos.length; i++){
+            var primerParrafo = parrafos[i];
+            var enlaces = primerParrafo.getElementsByTagName("a");
+                for(var a=0;a<enlaces.length;a++){
+                    cont++;
+                    
+                }
+                alert(a + " enlaces en este párrafo");
+            }
+            alert(cont + " enlaces");
+            
+            
+        }
+        contParrafos();
+        enlace1();
+        
+        </script>
+        
+    </body>
+</html>

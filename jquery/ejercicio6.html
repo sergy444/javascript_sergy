@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+         $(document).ready(function(){      
+            $("#boton1").click(function(){
+               $("#parrafo").slideDown("slow");
+            });
+            $("#boton2").click(function(){
+               $("#parrafo").slideUp("slow");
+            });
+         });
+        
+         
+        </script>
+        <h2>Párrafo 1</h2>
+        <p id="parrafo" hidden>El párrafo será visible al hacer click sobre el botón </br>
+        Desaparecerá al hacer lo mismo con el otro</p>
+        <input type="button" name="" id="boton1" value="ver"/>
+        <input type="button" name="" id="boton2" value="desaparecer"/>
+    </body>
+</html>

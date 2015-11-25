@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saludo</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <p id="dia"></p>
+        
+        <script type="text/javascript">
+            
+        var dia;
+        
+           switch (new Date().getDay()) {
+        case 0:
+            dia = "Hoy es domingo";
+            break;
+        case 1:
+            dia = "Los lunes son el mal";
+            break;
+        case 2:
+            dia = "Los martes son peores";
+            break;
+        case 3:
+            dia = "Los miercoles son muy largos";
+            break;
+        case 4:
+            dia = "Es jueves";
+            break;
+        case 5:
+            dia = "Vivan los viernes";
+            break;
+        case 6:
+            dia = "Hurra por los sábados";
+            break;
+     }
+        document.getElementById("dia").innerHTML = dia;
+        </script>
+    </body>
+</html>

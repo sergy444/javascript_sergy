@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fade Out</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+         $(document).ready(function(){  
+              
+            $("#boton").click(function(){
+                $("#mensaje1").fadeOut();
+                $("#mensaje2").fadeOut("slow");
+                $("#mensaje3").fadeOut(3000);
+            });
+         });
+        
+        </script>
+        <div id="mensaje1">Texto1</div></br>
+        <div id="mensaje2">Texto2</div></br>
+        <div id="mensaje3">Texto3</div></br>
+        <input type="button" name="" id="boton" value="Ocultar"/>
+    </body>
+</html>

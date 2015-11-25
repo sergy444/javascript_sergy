@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texto oculto</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function añadir(){
+            var lista = document.getElementById("lista");
+            var element = document.getElementById("element");
+            
+            lista.innerHTML+="<li>"+element.value+"</li>";
+       
+}
+
+        </script>
+        <input type="button" name="button" value="añadir" onclick="añadir()"/></br>
+        <ul id="lista">
+            <li>nuevo</li>
+        </ul>
+        <input type="text" placeholder="añade" id="element"/>
+        </body>
+        </html>
+        

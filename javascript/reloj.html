@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plantilla</title>
+    	<meta charset="utf-8"/>
+    </head>
+    <body>
+        <script type="text/javascript">
+          function reloj(){
+                ahora = new Date();
+                hour = ahora.getHours();
+                minute = (ahora.getMinutes()<10)?"0"+ahora.getMinutes():ahora.getMinutes();
+                second = (ahora.getSeconds()<10)?"0"+ahora.getSeconds():ahora.getSeconds();
+                cuando= ahora.getHours() >= 12 ? " PM" : " AM";
+
+                reloj = hour + " : " + minute + " : " + second + cuando;
+
+                document.getElementById("reloj").value = reloj;
+                
+                setTimeout("mueveReloj()",1000);
+            }
+            window.onload=reloj;
+        </script>
+    </body>
+</html>

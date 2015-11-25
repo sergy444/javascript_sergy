@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creación de nodos</title>
+        <meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+          
+          function cambioColor(){
+              document.getElementById("parrafo").style.color = "blue";
+              
+          }
+          function cambioColor2(){
+              document.getElementById("parrafo").style.color = "green";
+              
+          }
+          
+        </script>
+        <p id="parrafo">Al pulsar el botón este párrafo cambiará de color.</p>
+        <input type="button" value="Azul" onclick="cambioColor()"/>
+        <input type="button" value="Verde" onclick="cambioColor2()"/>
+    </body>
+</html>

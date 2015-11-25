@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saludo</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <p id="fecha"></p>
+        
+        <script type="text/javascript">
+            var d = new Date();
+            var ano = d.getFullYear();
+            var mes = d.getMonth();
+            var dia = d.getUTCDate();
+            var hora = d.getHours();
+            var min = d.getMinutes();
+            
+            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            
+            document.getElementById("fecha").innerHTML = "Hoy es día " + dia + " de " + meses[mes]+ " de "+ano+ " y en estos momentos son las "+hora+":"+min;
+        </script>
+        </body>
+        </html>

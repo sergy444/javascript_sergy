@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imágenes que cambian</title>
+        <meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    	<style>
+    	    #foto{
+    	        margin-left:500px;
+    	        margin-top:-480px;
+    	    }
+    	    
+    	</style>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+            function cambiaFoto(){
+                document.getElementById("foto").src = "img/eren.jpg";
+            }
+            function cambiaFoto2(){
+                document.getElementById("foto").src = "img/saber.jpg";
+            }
+            function cambiaFoto3(){
+                document.getElementById("foto").src = "img/titan.jpg";
+            }
+            
+            
+            
+
+        </script>
+        
+        <img width="300" height="200" id="eren" name="eren" src="img/eren.jpg" onclick="cambiaFoto()"></br></br>
+        <img width="300" height="200" id="saber" name="saber" src="img/saber.jpg" onclick="cambiaFoto2()"></br></br>
+        <img width="300" height="200" id="titan" name="titan" src="img/titan.jpg" onclick="cambiaFoto3()">
+        
+        <div><img width="600" height="430" id="foto" name="foto" src="img/eren.jpg"></div>
+        
+    </body>
+</html>

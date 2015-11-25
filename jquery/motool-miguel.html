@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <script src="lib/jquery-1.11.3.min.js"></script>
+        <script src="lib/MooTools-Core-1.5.2.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+            #c1{
+                width: 40px;
+                height: 40px;
+                background-color: pink;
+                margin-left: 200px;
+                margin-top: 200px;
+            }
+        </style>
+        <script type="text/javascript">
+             $(document).ready(function(){
+                miEfecto1=new Fx.Morph("c1",{
+                        duration: 2000,
+                     
+                });
+                miEfecto2=new Fx.Morph("c1",{
+                        duration: 2000,
+                     
+                });
+                miEfecto3=new Fx.Morph("c1",{
+                        duration: 2000,
+                     
+                });
+                function subir(){
+                    miEfecto2.start({
+                        "margin-top":"10px",
+                        "opacity":"0"
+                    });
+                }
+                $$("#boton1").addEvent("click",function(){
+                    miEfecto1.start({
+                        "margin-left":"10px",
+                        "backgroundColor":"#0066FF"
+                    });
+                       subir.delay(2000);
+                });
+                
+                $$("#boton2").addEvent("click",function(){
+                    miEfecto2.stop(1000);
+                    miEfecto1.start({
+                        "width": "40px",
+                        "height": "40px",
+                        "background-color": "#FFCCCC",
+                        "margin-left": "200px",
+                        "margin-top": "200px",
+                        "opacity":"1"
+                    });
+                });
+
+             });
+        </script>
+        <input type="button" id="boton1" value="Start"/>
+        <input type="button" id="boton2" value="Restore"/>
+        <div id="c1" ></div>
+    </body>
+</html>

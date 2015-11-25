@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Texto oculto</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            function mostrar(){
+            document.getElementById('texto').style.display = 'block';}
+            
+            function ocultar(){
+            document.getElementById('texto').style.display = 'none';}
+        </script>
+        <div id="texto" style='display:none;'>Contenido a mostrar porque esta oculto en un principio, pero si le das al boton aparecerá, juas juas.</div>
+        <input type="button" name="mostrar" id="mostrar" value="mostrar" onclick="mostrar()"/>
+        <input type="button" name="ocultar" id="ocultar" value="ocultar" onclick="ocultar()"/>
+        </body>
+        </html>

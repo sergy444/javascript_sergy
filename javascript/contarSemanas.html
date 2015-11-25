@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objetos</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var d = prompt("Introduce una fecha en formato dd/mm/aaaa");
+            var spl = d.split("/");
+            var a = prompt("Introduce otra fecha en formato dd/mm/aaaa");
+            var spl2 = a.split("/");
+            
+            var ano1 = spl[2];
+            var ano2 = spl2[2];
+            
+            var mes1 = spl[1];
+            var mes2 = spl2[1];
+            
+            var dia1 = spl[0];
+            var dia2 = spl2[0];
+            
+            
+            
+            if(ano1 > ano2){
+                var result = ((ano1 - ano2) * 52);
+                if(mes1>mes2){
+                var resultado = result+((mes1-mes2)*4);
+                }
+                else{
+                var resultado = result+((mes2-mes1)*4);
+                }
+                document.write("Entre esas dos fechas hay "+resultado+" semanas");
+                
+            }
+            if(ano2 > ano1){
+                var result = ((ano2 - ano1) * 52);
+                if(mes1>mes2){
+                var resultado = result+((mes1-mes2)*4);
+                }
+                else{
+                var resultado = result+((mes2-mes1)*4);
+                }
+                document.write("Entre esas dos fechas hay "+resultado+" semanas");
+                
+            }
+            
+         /*  if(ano1 =< 1970 && ano2 =< 1970){
+                alert("introduce una fecha superior a 1970");
+           }*/
+        </script>
+    </body>
+</html>

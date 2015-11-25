@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Redirección con confirmación</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    	<style type="text/css">
+    	div{
+    	    margin-top:-200px;
+    	}
+    	</style>
+    </head>
+    <body>
+        <script type="text/javascript">
+         $(document).ready(function(){
+             
+            $("#saber").click(function(){
+                $("#saber").fadeTo("slow", 0.5);
+                $("#mensaje").fadeIn("slow");
+                
+            });
+            
+         });
+        </script>
+        <img width="500" height="400" id="saber" name="saber" src="../img/saber.jpg"></br>
+        <div id="mensaje" hidden><h1>Este texto debería ser visible</h1></div>
+    </body>
+</html>

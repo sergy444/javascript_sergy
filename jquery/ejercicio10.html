@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>coordenadas de raton</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+         $(document).ready(function(){  
+             
+             $(document).mousemove(function(evento){
+                $('#coordinates').text(evento.pageX + ", " + evento.pageY);
+            });
+         });
+        </script>
+        <p>El ratón está aquí: <div id="coordinates"></div></p>
+    </body>
+</html>

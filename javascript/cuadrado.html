@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <style type="text/css">
+            #square{
+                border:6px solid;
+                height:200px;
+                width:200px;
+                border-color:pink;
+            }
+        </style>
+        <script type="text/javascript">
+        function funcion(){
+            var circ=event.type;
+            if(circ == "mouseover"){
+            document.getElementById("square").style.borderRadius= "45px";
+            }
+            else if(circ == "mouseout"){
+                document.getElementById("square").style.borderRadius= "0px";
+            }
+            
+        }
+        </script>
+        <div id="square" onmouseover="funcion()" onmouseout="funcion()"></div>
+        </body>
+        </html>

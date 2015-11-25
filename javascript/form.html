@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    	<meta charset="utf-8"/>
+    	<script src="lib/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function datos(){
+                var nom = document.getElementById("nombre").value;
+                var ciudad = document.getElementById("ciudad").value;
+                if(document.getElementsByName("sex")[0].checked) {
+                    
+                    var sex = document.getElementById("hombre").value;
+                    
+                }
+                else if(document.getElementsByName("sex")[1].checked){
+                    
+                     var sex = document.getElementById("mujer").value;
+                }
+   
+                document.getElementById("div").innerHTML = ("el nombre es "+nom+", la cuidad es "+ciudad+", el sexo es "+sex);
+                
+                
+                
+            }
+            
+        </script>
+        <form>
+            <input type="text" name="nombre" id="nombre"/></br></br>
+            
+            <label for="ciudad">Seleccione ciudad</label> <br/>
+            <select id="ciudad" name="ciudad">
+              <option value="" selected="selected">- seleccione -</option>
+              <option value="Lasarte">Lasarte</option>
+              <option value="Donostia">Donostia</option>
+              <option value="Azpeitia">Azpeitia</option>
+              <option value="Tokyo">Tokyo</option>
+            </select></br></br>
+            
+            <input type="radio" name="sex" value="hombre" id="hombre">Hombre
+            
+            <input type="radio" name="sex" value="mujer" id="mujer">Mujer
+            </br></br>
+            
+            <input type="button" value="Submit" onclick="datos()"/>
+        </form></br></br>
+        <label for="div">Información</label> <br/>
+        <div id="div" name="div"></div>
+    </body>
+</html>
